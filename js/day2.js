@@ -14,6 +14,6 @@ const companies = [
 let name,age;
 let filter = companies
              .filter(v => v.category === "Retail")
-             .map(v => [v.end-v.start])
+             .map(v => [v.name,v.end-v.start])
              .sort((a,b) => b[1]-a[1])
 console.log(filter)
